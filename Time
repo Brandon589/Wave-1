@@ -21,9 +21,6 @@ total_secs = number_of_seconds
 print(f"{number_of_days}:{number_of_hours}:{number_of_minutes}:{number_of_seconds}")
 
 # Current Time
-from datetime import datetime
-import pytz
-
-tz_ON = pytz.timezone('America/New_York') 
-datetime_ON = datetime.now(tz_ON)
-print("Current time is:", datetime_ON.strftime("%H:%M:%S"))
+import time
+x = time.asctime()
+print(x)
